@@ -1,0 +1,11 @@
++ Name (3..255) 
+	>minimal (e.g. Yan)
+	>maximal (e.g. wqtweyruityopiiiiiiiiiiiuuuuuuuuuuuuuuuuuuuuuuuuuyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyiiiiiiiiiiiiiiiiiiiiiiiisssssssssssssddddddddddddddddffffffffffffffffffhhhhhhhhhhhhhhhhhhggggggggggggggggggggjjjjjjjjjjjjjjjjjjjjjjjjjjjbbbbbbbbbbbbbbbbbbbbrrrrrrrrrrrrrrr)
+	>two words (e.g. John Grady)
+	>three words (e.g. Peter de Montfort)
+	>name with <'> (e.g. John O'Grady)
+	>name with <-> (e.g. Jose Casal-Gimenez)
+	>
++ Surname (3..255)
++ Email
++ Password (5-25, 1 number, 1 capital letter)
