@@ -1,10 +1,10 @@
 > Name (3..255) 
-	+ minimal (e.g. Yan)
-	+ maximal (e.g. wqtweyruityopiiiiiiiiiiiuuuuuuuuuuuuuuuuuuuuuuuuuyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyiiiiiiiiiiiiiiiiiiiiiiiisssssssssssssddddddddddddddddffffffffffffffffffhhhhhhhhhhhhhhhhhhggggggggggggggggggggjjjjjjjjjjjjjjjjjjjjjjjjjjjbbbbbbbbbbbbbbbbbbbbrrrrrrrrrrrrrrr)
-	+ two words (e.g. John Grady)
-	+ three words (e.g. Peter de Montfort)
-	+ name with <'> (e.g. John O'Grady)
-	+ name with <-> (e.g. Jose Casal-Gimenez)
+	+ minimal latin (e.g. Yan)
+	+ maximal latin (e.g. wqtweyruityopiiiiiiiiiiiuuuuuuuuuuuuuuuuuuuuuuuuuyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyiiiiiiiiiiiiiiiiiiiiiiiisssssssssssssddddddddddddddddffffffffffffffffffhhhhhhhhhhhhhhhhhhggggggggggggggggggggjjjjjjjjjjjjjjjjjjjjjjjjjjjbbbbbbbbbbbbbbbbbbbbrrrrrrrrrrrrrrr)
+	+ two words latin (e.g. John Grady)
+	+ three words latin (e.g. Peter de Montfort)
+	+ name latin with <'> (e.g. John O'Grady)
+	+ name latin with <-> (e.g. Jose Casal-Gimenez)
 	+
 > Surname (3..255)
 > Email
