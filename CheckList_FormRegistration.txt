@@ -1,11 +1,26 @@
-> Name (3..255) 
-	+ minimal latin (e.g. Yan)
-	+ maximal latin (e.g. wqtweyruityopiiiiiiiiiiiuuuuuuuuuuuuuuuuuuuuuuuuuyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyiiiiiiiiiiiiiiiiiiiiiiiisssssssssssssddddddddddddddddffffffffffffffffffhhhhhhhhhhhhhhhhhhggggggggggggggggggggjjjjjjjjjjjjjjjjjjjjjjjjjjjbbbbbbbbbbbbbbbbbbbbrrrrrrrrrrrrrrr)
+> Name (3..255)[a-z][A-Z] uppercase and lowercase Latin letters
+	+ min length latin lowercase (e.g. yan)
+	+ max length latin lowercase (e.g. wqtweyruityopiiiiiiiiiiiuuuuuuuuuuuuuuuuuuuuuuuuuyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyiiiiiiiiiiiiiiiiiiiiiiiisssssssssssssddddddddddddddddffffffffffffffffffhhhhhhhhhhhhhhhhhhggggggggggggggggggggjjjjjjjjjjjjjjjjjjjjjjjjjjjbbbbbbbbbbbbbbbbbbbbrrrrrrrrrrrrrrr)
+	+ middle length latin uppercase (e.g. JERREMY)
+	+ middle lenght latin uppercase and lowercase (e.g. PeterDeMontfort)
 	+ two words latin (e.g. John Grady)
 	+ three words latin (e.g. Peter de Montfort)
 	+ name latin with <'> (e.g. John O'Grady)
 	+ name latin with <-> (e.g. Jose Casal-Gimenez)
+	+ copy_paste valid name 
+> Surname (3..255)[a-z][A-Z] 
+	+ min length latin lowercase(e.g. jan)
+	+ max length latin lowercase (e.g. Wqtweyruityopiiiiiiiiiiiuuuuuuuuuuuuuuuuuuuuuuuuuyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyiiiiiiiiiiiiiiiiiiiiiiiisssssssssssssddddddddddddddddffffffffffffffffffhhhhhhhhhhhhhhhhhhggggggggggggggggggggjjjjjjjjjjjjjjjjjjjjjjjjjjjbbbbbbbbbbbbbbbbbbbbrrrrrrrrrrrrrrr)
+	+ middle length latin uppercase (e.g. JERREMY)
+	+ middle lenght latin uppercase and lowercase (e.g. PeterDeMontfort)
+	+ two words latin (e.g. John Grady)
+	+ three words latin (e.g. Peter de Montfort)
+	+ surname latin with <'> (e.g. John O'Grady)
+	+ surname latin with <-> (e.g. Jose Casal-Gimenez)
+	+ copy_paste valid surname
+> Email max(64{[a-z][A-Z][0-9][!#$%&'*+-/=?^_`{|}~][.]}@{63[a-z][A-Z][0-9][/]
+https://qaevolution.ru/validaciya-imejlov/
+https://en.wikipedia.org/wiki/Email_address
 	+
-> Surname (3..255)
-> Email
 > Password (5-25, 1 number, 1 capital letter)
+	+
