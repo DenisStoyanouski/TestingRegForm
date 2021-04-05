@@ -62,7 +62,7 @@ http://itcareer.pythonanywhere.com/
 		+ with hyphen (e.g. 123bip@g-mail.ru)
 		+ with underscore (e.g. 123bip@gma_il.ru)
 		+ with two dot (e.g. 123bip@g.mail.ru)
-		+ square brecket around ip address (e.g. email@[123.123.123.123])
+		+ square brackets around ip address (e.g. email@[123.123.123.123])
 		+ non-ACSII (e.g. nathan@学生优惠.com)
 	- no @ in address (e.g.	plainaddress)
 	- no address (e.g. @domain.com)
@@ -77,9 +77,9 @@ http://itcareer.pythonanywhere.com/
 	- multiple dots in domain (e.g. email@domain..com)
 	- length local part +1 symbol (e.g. qwertyuioplkjhgfdsxcvbnmwrpjgaoigharihgprehgioherettuyhtdlgfdkgfi@domain.com)
 	- length domain part +1 symbol (e.g. bush@qwqtweyruityopiiiiiiiiiiiuuuuuuuuuuuuuuuuuuuuuuuuuyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyiiiiiiiiiiiiiiiiiiiiiiiisssssssssssssddddddddddddddddffffffffffffffffffhhhhhhhhhhhhhhhhhhggggggggggggggggggggjjjjjjjjjjjjjjjjjjjjjjjjjjjbbbbbbbbbbbbbbbbbbbbrrrrrrrrrrrrrrr.com
-	
-https://qaevolution.ru/validaciya-imejlov/
-https://en.wikipedia.org/wiki/Email_address
-	+
 > Password (5-25, 1 number, 1 uppercase)
-	+
+	+ min length (e.g. wer5Q)
+	+ max length (e.g qwertyuiopasdfghjklzxcw5W)
+	- min length -1 (e.g. we5Q)
+	- max length +1 (e.g. qwertyuiopasdfghjklzxcw5Ww)
+	
