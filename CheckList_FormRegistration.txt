@@ -57,7 +57,6 @@ http://itcareer.pythonanywhere.com/
 		+ with dot (e.g. 123.bip@gmail.ru)
 		+ unnecesarry cuotes (e.g. "email"@domain.com)
 		+ necesarry cuotes (e.g. "email..email"@domain.com)
-		- 
 	> domain part
 		+ with number (e.g. bip@12345.com)
 		+ with hyphen (e.g. 123bip@g-mail.ru)
@@ -65,6 +64,18 @@ http://itcareer.pythonanywhere.com/
 		+ with two dot (e.g. 123bip@g.mail.ru)
 		+ square brecket around ip address (e.g. email@[123.123.123.123])
 		+ non-ACSII (e.g. nathan@学生优惠.com)
+	- no @ in address (e.g.	plainaddress)
+	- no address (e.g. @domain.com)
+	- garbage (e.g. #@%^%#$@#$@#.com)
+	- leading dot in address (e.g. .email@domain.com)
+	- trailing do in address (e.g. email.@domain.com)
+	- multiple dots (e.g. email..email@domain.com)
+	- unicode charts in address (e.g. あいうえお@domain.com)
+	- leading dash in domain ( e.g. email@-domain.com)
+	- leading dot in domain (e.g. email@.domain.com)
+	- incorrect IP ( e.g. email@111.222.333.44444)
+	- multiple dots in domain (e.g. email@domain..com)
+	
 		
 		
 https://qaevolution.ru/validaciya-imejlov/
