@@ -80,6 +80,7 @@ http://itcareer.pythonanywhere.com/
 > Password (5-25, 1 number, 1 uppercase)
 	+ min length (e.g. wer5Q)
 	+ max length (e.g qwertyuiopasdfghjklzxcw5W)
+	- empty field
 	- min length -1 (e.g. we5Q)
 	- max length +1 (e.g. qwertyuiopasdfghjklzxcw5Ww)
 	
