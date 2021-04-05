@@ -8,7 +8,21 @@ http://itcareer.pythonanywhere.com/
 	+ three words latin (e.g. Peter de Montfort)
 	+ name latin with <'> (e.g. John O'Grady)
 	+ name latin with hyphen (e.g. Jose Casal-Gimenez)
-	+ copy_paste valid name 
+	+ copy_paste valid name
+	- empty field
+	- one space
+	- two space
+	- numbers (e.g. 123456789)
+	- symbols (e.g. !#$%&'*+-/=?^_`{|}~)
+	- min length-1 latin lowercase (e.g. ya)
+	- max length+1 latin lowercase (e.g. qwqtweyruityopiiiiiiiiiiiuuuuuuuuuuuuuuuuuuuuuuuuuyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyiiiiiiiiiiiiiiiiiiiiiiiisssssssssssssddddddddddddddddffffffffffffffffffhhhhhhhhhhhhhhhhhhggggggggggggggggggggjjjjjjjjjjjjjjjjjjjjjjjjjjjbbbbbbbbbbbbbbbbbbbbrrrrrrrrrrrrrrr)
+	- space before text (e.g. <  Grady>
+	- space after text (e.g. <Grady  >)
+	- middle length kirilica (e.g. Петр)
+	- SQL injection (e.g. Robert'); DROP TABLE Students;--)
+	- JS script injection (e.g.  <script>alert('Executing JS')</script>)
+	- JS script (XSS) injection (e.g.  '-prompt()-') 
+	- HTML parsing (e.g. <blink>Hello there</blink>)
 > Surname (3..255)[a-z][A-Z] 
 	+ min length latin lowercase(e.g. jan)
 	+ max length latin lowercase (e.g. Wqtweyruityopiiiiiiiiiiiuuuuuuuuuuuuuuuuuuuuuuuuuyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyiiiiiiiiiiiiiiiiiiiiiiiisssssssssssssddddddddddddddddffffffffffffffffffhhhhhhhhhhhhhhhhhhggggggggggggggggggggjjjjjjjjjjjjjjjjjjjjjjjjjjjbbbbbbbbbbbbbbbbbbbbrrrrrrrrrrrrrrr)
@@ -19,6 +33,20 @@ http://itcareer.pythonanywhere.com/
 	+ surname latin with <'> (e.g. John O'Grady)
 	+ surname latin with hyphen (e.g. Jose Casal-Gimenez)
 	+ copy_paste valid surname
+	- empty field
+	- one space
+	- two space
+	- numbers (e.g. 123456789)
+	- symbols (e.g. !#$%&'*+-/=?^_`{|}~)
+	- min length-1 latin lowercase (e.g. ya)
+	- max length+1 latin lowercase (e.g. qwqtweyruityopiiiiiiiiiiiuuuuuuuuuuuuuuuuuuuuuuuuuyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyiiiiiiiiiiiiiiiiiiiiiiiisssssssssssssddddddddddddddddffffffffffffffffffhhhhhhhhhhhhhhhhhhggggggggggggggggggggjjjjjjjjjjjjjjjjjjjjjjjjjjjbbbbbbbbbbbbbbbbbbbbrrrrrrrrrrrrrrr)
+	- space before text (e.g. <  Grady>
+	- space after text (e.g. <Grady  >)
+	- middle length kirilica (e.g. Петр)
+	- SQL injection (e.g. Robert'); DROP TABLE Students;--)
+	- JS script injection (e.g.  <script>alert('Executing JS')</script>)
+	- JS script (XSS) injection (e.g.  '-prompt()-') 
+	- HTML parsing (e.g. <blink>Hello there</blink>)
 > Email max(64{[a-z][A-Z][0-9][!#$%&'*+-/=?^_`{|}~][.]}@{2-63[a-z][A-Z][0-9][/]
 	+ valid email lowercase (e.g. graspy@gmail.ru)
 	+ valid email uppercase (e.g. GRASPY@GMAIL.RU)
@@ -27,13 +55,16 @@ http://itcareer.pythonanywhere.com/
 		+ with hyphen (e.g. 123-bip@gmail.ru)
 		+ with underscore (e.g. 123_bip@gmail.ru)
 		+ with dot (e.g. 123.bip@gmail.ru)
-		
+		+ unnecesarry cuotes (e.g. "email"@domain.com)
+		+ necesarry cuotes (e.g. "email..email"@domain.com)
+		- 
 	> domain part
 		+ with number (e.g. bip@12345.com)
 		+ with hyphen (e.g. 123bip@g-mail.ru)
 		+ with underscore (e.g. 123bip@gma_il.ru)
 		+ with two dot (e.g. 123bip@g.mail.ru)
-		
+		+ square brecket around ip address (e.g. email@[123.123.123.123])
+		+ non-ACSII (e.g. nathan@学生优惠.com)
 		
 		
 https://qaevolution.ru/validaciya-imejlov/
