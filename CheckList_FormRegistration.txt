@@ -3,7 +3,7 @@ http://itcareer.pythonanywhere.com/
 	+ min length latin lowercase (e.g. yan)
 	+ max length latin lowercase (e.g. wqtweyruityopiiiiiiiiiiiuuuuuuuuuuuuuuuuuuuuuuuuuyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyiiiiiiiiiiiiiiiiiiiiiiiisssssssssssssddddddddddddddddffffffffffffffffffhhhhhhhhhhhhhhhhhhggggggggggggggggggggjjjjjjjjjjjjjjjjjjjjjjjjjjjbbbbbbbbbbbbbbbbbbbbrrrrrrrrrrrrrrr)
 	+ middle length latin uppercase (e.g. JERREMY)
-	+ middle lenght latin uppercase and lowercase (e.g. PeterDeMontfort)
+	+ middle length latin uppercase and lowercase (e.g. PeterDeMontfort)
 	+ two words latin (e.g. John Grady)
 	+ three words latin (e.g. Peter de Montfort)
 	+ name latin with <'> (e.g. John O'Grady)
@@ -27,7 +27,7 @@ http://itcareer.pythonanywhere.com/
 	+ min length latin lowercase(e.g. jan)
 	+ max length latin lowercase (e.g. Wqtweyruityopiiiiiiiiiiiuuuuuuuuuuuuuuuuuuuuuuuuuyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyiiiiiiiiiiiiiiiiiiiiiiiisssssssssssssddddddddddddddddffffffffffffffffffhhhhhhhhhhhhhhhhhhggggggggggggggggggggjjjjjjjjjjjjjjjjjjjjjjjjjjjbbbbbbbbbbbbbbbbbbbbrrrrrrrrrrrrrrr)
 	+ middle length latin uppercase (e.g. JERREMY)
-	+ middle lenght latin uppercase and lowercase (e.g. PeterDeMontfort)
+	+ middle length latin uppercase and lowercase (e.g. PeterDeMontfort)
 	+ two words latin (e.g. John Grady)
 	+ three words latin (e.g. Peter de Montfort)
 	+ surname latin with <'> (e.g. John O'Grady)
@@ -75,9 +75,9 @@ http://itcareer.pythonanywhere.com/
 	- leading dot in domain (e.g. email@.domain.com)
 	- incorrect IP ( e.g. email@111.222.333.44444)
 	- multiple dots in domain (e.g. email@domain..com)
+	- length local part +1 symbol (e.g. qwertyuioplkjhgfdsxcvbnmwrpjgaoigharihgprehgioherettuyhtdlgfdkgfi@domain.com)
+	- length domain part +1 symbol (e.g. bush@qwqtweyruityopiiiiiiiiiiiuuuuuuuuuuuuuuuuuuuuuuuuuyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyiiiiiiiiiiiiiiiiiiiiiiiisssssssssssssddddddddddddddddffffffffffffffffffhhhhhhhhhhhhhhhhhhggggggggggggggggggggjjjjjjjjjjjjjjjjjjjjjjjjjjjbbbbbbbbbbbbbbbbbbbbrrrrrrrrrrrrrrr.com
 	
-		
-		
 https://qaevolution.ru/validaciya-imejlov/
 https://en.wikipedia.org/wiki/Email_address
 	+
