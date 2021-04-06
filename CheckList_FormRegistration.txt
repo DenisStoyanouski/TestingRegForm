@@ -1,6 +1,8 @@
 http://itcareer.pythonanywhere.com/
 > Name (3..255)[a-z][A-Z] uppercase and lowercase Latin letters
 	+ min length latin lowercase (e.g. yan)
+	+ min length+1 latin lowercase (e.g. yang)
+	+ max length-1 latin lowercase (e.g. qtweyruityopiiiiiiiiiiiuuuuuuuuuuuuuuuuuuuuuuuuuyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyiiiiiiiiiiiiiiiiiiiiiiiisssssssssssssddddddddddddddddffffffffffffffffffhhhhhhhhhhhhhhhhhhggggggggggggggggggggjjjjjjjjjjjjjjjjjjjjjjjjjjjbbbbbbbbbbbbbbbbbbbbrrrrrrrrrrrrrrr)
 	+ max length latin lowercase (e.g. wqtweyruityopiiiiiiiiiiiuuuuuuuuuuuuuuuuuuuuuuuuuyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyiiiiiiiiiiiiiiiiiiiiiiiisssssssssssssddddddddddddddddffffffffffffffffffhhhhhhhhhhhhhhhhhhggggggggggggggggggggjjjjjjjjjjjjjjjjjjjjjjjjjjjbbbbbbbbbbbbbbbbbbbbrrrrrrrrrrrrrrr)
 	+ middle length latin uppercase (e.g. JERREMY)
 	+ middle length latin uppercase and lowercase (e.g. PeterDeMontfort)
