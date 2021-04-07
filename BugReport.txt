@@ -14,7 +14,6 @@ Message Success! Hello: <Name> <Surname>
 AR: 
 Error: Error: All Fields are Required
 
-
 Bug_2
 Title: 
 Name, max length-1 latin lowercase
@@ -30,7 +29,6 @@ ER:
 Message Success! Hello: <Name> <Surname> 
 AR: 
 Error: Error: All Fields are Required
-
 
 Bug_3
 Title: 
@@ -48,7 +46,6 @@ Message Success! Hello: <Name> <Surname>
 AR: 
 Error: Error: All Fields are Required
 
-
 Bug_4
 Title: 
 Name, one space
@@ -58,13 +55,12 @@ Environment:
 Google Chrome, Версия 89.0.4389.114 (Официальная сборка), (64 бит)
 Steps:
 1. Enter valid Surname, Email, Password
-2. Enter one space (e.g. " ")
+2. Enter name one space (e.g. " ")
 3. Click 'Submit' button
 ER:
-Message Success! Hello: <Name> <Surname> 
+Message "Error: All Fields are Required"
 AR: 
-Error: Error: All Fields are Required
-
+Error: Message "Success! Hello: <Name> <Surname>"
 
 Bug_5
 Title: 
@@ -75,13 +71,12 @@ Environment:
 Google Chrome, Версия 89.0.4389.114 (Официальная сборка), (64 бит)
 Steps:
 1. Enter valid Surname, Email, Password
-2. Enter two space (e.g. "  ")
+2. Enter name two space (e.g. "  ")
 3. Click 'Submit' button
 ER:
-Message Success! Hello: <Name> <Surname> 
+Message "Error: All Fields are Required"
 AR: 
-Error: Error: All Fields are Required
-
+Error: Message "Success! Hello: <Name> <Surname>"
 
 Bug_6
 Title: 
@@ -92,13 +87,12 @@ Environment:
 Google Chrome, Версия 89.0.4389.114 (Официальная сборка), (64 бит)
 Steps:
 1. Enter valid Surname, Email, Password
-2. Enter numbers (e.g. 123456789)
+2. Enter name numbers (e.g. 123456789)
 3. Click 'Submit' button
 ER:
-Message Success! Hello: <Name> <Surname> 
+Message "Error: All Fields are Required"
 AR: 
-Error: Error: All Fields are Required
-
+Error: Message "Success! Hello: <Name> <Surname>"
 
 Bug_7
 Title: 
@@ -109,9 +103,265 @@ Environment:
 Google Chrome, Версия 89.0.4389.114 (Официальная сборка), (64 бит)
 Steps:
 1. Enter valid Surname, Email, Password
-2. Enter symbols (e.g. !#$%&'*+-/=?^_`{|}~)
+2. Enter name symbols (e.g. !#$%&'*+-/=?^_`{|}~)
 3. Click 'Submit' button
 ER:
-Message Success! Hello: <Name> <Surname> 
+Message "Error: All Fields are Required"
 AR: 
-Error: Error: All Fields are Required
+Error: Message "Success! Hello: <Name> <Surname>"
+
+Bug_8
+Title: 
+Name, space before text
+Precondition: 
+Open http://itcareer.pythonanywhere.com/
+Environment:
+Google Chrome, Версия 89.0.4389.114 (Официальная сборка), (64 бит)
+Steps:
+1. Enter valid Surname, Email, Password
+2. Enter name with space before text  (e.g. " Grady")
+3. Click 'Submit' button
+ER:
+Message "Error: All Fields are Required"
+AR: 
+Error: Message "Success! Hello: <Name> <Surname>"
+
+Bug_9
+Title: 
+Name, space after text
+Precondition: 
+Open http://itcareer.pythonanywhere.com/
+Environment:
+Google Chrome, Версия 89.0.4389.114 (Официальная сборка), (64 бит)
+Steps:
+1. Enter valid Surname, Email, Password
+2. Enter name with space after text (e.g. "Grady ")
+3. Click 'Submit' button
+ER:
+Message "Error: All Fields are Required"
+AR: 
+Error: Message "Success! Hello: <Name> <Surname>"
+
+Bug_10
+Title: 
+Name, middle length kirilica
+Precondition: 
+Open http://itcareer.pythonanywhere.com/
+Environment:
+Google Chrome, Версия 89.0.4389.114 (Официальная сборка), (64 бит)
+Steps:
+1. Enter valid Surname, Email, Password
+2. Enter name middle length kirilica (e.g. "Петр")
+3. Click 'Submit' button
+ER:
+Message "Error: All Fields are Required"
+AR: 
+Error: Message "Success! Hello: <Name> <Surname>"
+
+Bug_11
+Title: 
+Name, JS script (XSS) injection
+Precondition: 
+Open http://itcareer.pythonanywhere.com/
+Environment:
+Google Chrome, Версия 89.0.4389.114 (Официальная сборка), (64 бит)
+Steps:
+1. Enter valid Surname, Email, Password
+2. Enter name JS script (XSS) injection (e.g. -prompt()-')
+3. Click 'Submit' button
+ER:
+Message "Error: All Fields are Required"
+AR: 
+Error: Message "Success! Hello: <Name> <Surname>"
+
+Bug_12
+Title: 
+Surname, numbers
+Precondition: 
+Open http://itcareer.pythonanywhere.com/
+Environment:
+Google Chrome, Версия 89.0.4389.114 (Официальная сборка), (64 бит)
+Steps:
+1. Enter valid Name, Email, Password
+2. Enter surname numbers  (e.g. 123456789)
+3. Click 'Submit' button
+ER:
+Message "Error: All Fields are Required"
+AR: 
+Error: Message "Success! Hello: <Name> <Surname>"
+
+Bug_13
+Title: 
+Surname, symbols
+Precondition: 
+Open http://itcareer.pythonanywhere.com/
+Environment:
+Google Chrome, Версия 89.0.4389.114 (Официальная сборка), (64 бит)
+Steps:
+1. Enter valid Name, Email, Password
+2. Enter surname symbols  (e.g. !#$%&'*+-/=?^_`{|}~)
+3. Click 'Submit' button
+ER:
+Message "Error: All Fields are Required"
+AR: 
+Error: Message "Success! Hello: <Name> <Surname>"
+
+Bug_14
+Title: 
+Surname, min length-1 latin lowercase
+Precondition: 
+Open http://itcareer.pythonanywhere.com/
+Environment:
+Google Chrome, Версия 89.0.4389.114 (Официальная сборка), (64 бит)
+Steps:
+1. Enter valid Name, Email, Password
+2. Enter surname length 2 latin lowercase (e.g. ya)
+3. Click 'Submit' button
+ER:
+Message "Error: All Fields are Required"
+AR: 
+Error: Message "Success! Hello: <Name> <Surname>"
+
+Bug_15
+Title: 
+Surname, max length+1 latin lowercase
+Precondition: 
+Open http://itcareer.pythonanywhere.com/
+Environment:
+Google Chrome, Версия 89.0.4389.114 (Официальная сборка), (64 бит)
+Steps:
+1. Enter valid Name, Email, Password
+2. Enter surname length 256 latin lowercase (e.g. qwqtweyruityopiiiiiiiiiiiuuuuuuuuuuuuuuuuuuuuuuuuuyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyiiiiiiiiiiiiiiiiiiiiiiiisssssssssssssddddddddddddddddffffffffffffffffffhhhhhhhhhhhhhhhhhhggggggggggggggggggggjjjjjjjjjjjjjjjjjjjjjjjjjjjbbbbbbbbbbbbbbbbbbbbrrrrrrrrrrrrrrr)
+3. Click 'Submit' button
+ER:
+Message "Error: All Fields are Required"
+AR: 
+Error: Message "Success! Hello: <Name> <Surname>"
+
+Bug_16
+Title: 
+Surname, space before text
+Precondition: 
+Open http://itcareer.pythonanywhere.com/
+Environment:
+Google Chrome, Версия 89.0.4389.114 (Официальная сборка), (64 бит)
+Steps:
+1. Enter valid Name, Email, Password
+2. Enter surname space before text (e.g. " Grady")
+3. Click 'Submit' button
+ER:
+Message "Error: All Fields are Required"
+AR: 
+Error: Message "Success! Hello: <Name> <Surname>"
+
+Bug_17
+Title: 
+Surname, space after text
+Precondition: 
+Open http://itcareer.pythonanywhere.com/
+Environment:
+Google Chrome, Версия 89.0.4389.114 (Официальная сборка), (64 бит)
+Steps:
+1. Enter valid Name, Email, Password
+2. Enter surname space after text (e.g. "Grady ")
+3. Click 'Submit' button
+ER:
+Message "Error: All Fields are Required"
+AR: 
+Error: Message "Success! Hello: <Name> <Surname>"
+
+Bug_18
+Title: 
+Surname, middle length kirilica
+Precondition: 
+Open http://itcareer.pythonanywhere.com/
+Environment:
+Google Chrome, Версия 89.0.4389.114 (Официальная сборка), (64 бит)
+Steps:
+1. Enter valid Name, Email, Password
+2. Enter surname middle length kirilica (e.g. "Петр")
+3. Click 'Submit' button
+ER:
+Message "Error: All Fields are Required"
+AR: 
+Error: Message "Success! Hello: <Name> <Surname>"
+
+Bug_19
+Title: 
+Surname, SQL injection
+Precondition: 
+Open http://itcareer.pythonanywhere.com/
+Environment:
+Google Chrome, Версия 89.0.4389.114 (Официальная сборка), (64 бит)
+Steps:
+1. Enter valid Name, Email, Password
+2. Enter surname SQL injection (e.g. Robert'); DROP TABLE Students;--)
+3. Click 'Submit' button
+ER:
+Message "Error: All Fields are Required"
+AR: 
+Error: Message "Success! Hello: <Name> <Surname>"
+
+Bug_20
+Title: 
+Surname, JS script injection
+Precondition: 
+Open http://itcareer.pythonanywhere.com/
+Environment:
+Google Chrome, Версия 89.0.4389.114 (Официальная сборка), (64 бит)
+Steps:
+1. Enter valid Name, Email, Password
+2. Enter surname JS script injection (e.g. <script>alert('Executing JS')</script>)
+3. Click 'Submit' button
+ER:
+Message "Error: All Fields are Required"
+AR: 
+Error: Message "Success! Hello: <Name> <Surname>"
+
+Bug_21
+Title: 
+Surname, JS script (XSS) injection
+Precondition: 
+Open http://itcareer.pythonanywhere.com/
+Environment:
+Google Chrome, Версия 89.0.4389.114 (Официальная сборка), (64 бит)
+Steps:
+1. Enter valid Name, Email, Password
+2. Enter surname JS script (XSS) injection (e.g. -prompt()-')
+3. Click 'Submit' button
+ER:
+Message "Error: All Fields are Required"
+AR: 
+Error: Message "Success! Hello: <Name> <Surname>"
+
+Bug_22
+Title: 
+Surname, HTML parsing
+Precondition: 
+Open http://itcareer.pythonanywhere.com/
+Environment:
+Google Chrome, Версия 89.0.4389.114 (Официальная сборка), (64 бит)
+Steps:
+1. Enter valid Name, Email, Password
+2. Enter surname HTML parsing (e.g. <blink>Hello there</blink>)
+3. Click 'Submit' button
+ER:
+Message "Error: All Fields are Required"
+AR: 
+Error: Message "Success! Hello: <Name> <Surname>"
+
+Bug_23
+Title: 
+Surname, HTML parsing
+Precondition: 
+Open http://itcareer.pythonanywhere.com/
+Environment:
+Google Chrome, Версия 89.0.4389.114 (Официальная сборка), (64 бит)
+Steps:
+1. Enter valid Name, Email, Password
+2. Enter surname HTML parsing (e.g. <blink>Hello there</blink>)
+3. Click 'Submit' button
+ER:
+Message "Error: All Fields are Required"
+AR: 
+Error: Message "Success! Hello: <Name> <Surname>"
