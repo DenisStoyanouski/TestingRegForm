@@ -574,4 +574,51 @@ Message "Error: All Fields are Required"
 AR: 
 Error: Message "Success! Hello: <Name> <Surname>"
 
+Bug_37
+Title: 
+Password, empty field
+Precondition: 
+Open http://itcareer.pythonanywhere.com/
+Environment:
+Google Chrome, Версия 89.0.4389.114 (Официальная сборка), (64 бит)
+Steps:
+1. Enter valid Name, Surname, Email 
+2. Enter Password (e.g. )
+3. Click 'Submit' button
+ER:
+Message "Error: All Fields are Required"
+AR: 
+Error: Message "Success! Hello: <Name> <Surname>"
+
+Bug_38
+Title: 
+Password, min length -1
+Precondition: 
+Open http://itcareer.pythonanywhere.com/
+Environment:
+Google Chrome, Версия 89.0.4389.114 (Официальная сборка), (64 бит)
+Steps:
+1. Enter valid Name, Surname, Email 
+2. Enter Password length 4 symbols (e.g. we5Q)
+3. Click 'Submit' button
+ER:
+Message "Error: All Fields are Required"
+AR: 
+Error: Message "Success! Hello: <Name> <Surname>"
+
+Bug_39
+Title: 
+Password, max length +1
+Precondition: 
+Open http://itcareer.pythonanywhere.com/
+Environment:
+Google Chrome, Версия 89.0.4389.114 (Официальная сборка), (64 бит)
+Steps:
+1. Enter valid Name, Surname, Email 
+2. Enter Password  26 symbols (e.g. qwertyuiopasdfghjklzxcw5Ww)
+3. Click 'Submit' button
+ER:
+Message "Error: All Fields are Required"
+AR: 
+Error: Message "Success! Hello: <Name> <Surname>"
 
