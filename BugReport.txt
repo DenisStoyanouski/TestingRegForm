@@ -365,3 +365,213 @@ ER:
 Message "Error: All Fields are Required"
 AR: 
 Error: Message "Success! Hello: <Name> <Surname>"
+
+Bug_24
+Title: 
+Email, no @ in address
+Precondition: 
+Open http://itcareer.pythonanywhere.com/
+Environment:
+Google Chrome, Версия 89.0.4389.114 (Официальная сборка), (64 бит)
+Steps:
+1. Enter valid Name, Surname, Password
+2. Enter Email no @ in address (e.g. plainaddress)
+3. Click 'Submit' button
+ER:
+Message "Error: All Fields are Required"
+AR: 
+Error: Message "Success! Hello: <Name> <Surname>"
+
+Bug_25
+Title: 
+Email, no address 
+Precondition: 
+Open http://itcareer.pythonanywhere.com/
+Environment:
+Google Chrome, Версия 89.0.4389.114 (Официальная сборка), (64 бит)
+Steps:
+1. Enter valid Name, Surname, Password
+2. Enter Email no address (e.g. )
+3. Click 'Submit' button
+ER:
+Message "Error: All Fields are Required"
+AR: 
+Error: Message "Success! Hello: <Name> <Surname>"
+
+Bug_26
+Title: 
+Email, garbage 
+Precondition: 
+Open http://itcareer.pythonanywhere.com/
+Environment:
+Google Chrome, Версия 89.0.4389.114 (Официальная сборка), (64 бит)
+Steps:
+1. Enter valid Name, Surname, Password
+2. Enter Email garbage (e.g. #@%^%#$@#$@#.com)
+3. Click 'Submit' button
+ER:
+Message "Error: All Fields are Required"
+AR: 
+Error: Message "Success! Hello: <Name> <Surname>"
+
+Bug_27
+Title: 
+Email, leading dot in address 
+Precondition: 
+Open http://itcareer.pythonanywhere.com/
+Environment:
+Google Chrome, Версия 89.0.4389.114 (Официальная сборка), (64 бит)
+Steps:
+1. Enter valid Name, Surname, Password
+2. Enter Email leading dot in address (e.g. .email@domain.com)
+3. Click 'Submit' button
+ER:
+Message "Error: All Fields are Required"
+AR: 
+Error: Message "Success! Hello: <Name> <Surname>"
+
+Bug_28
+Title: 
+Email, trailing do in address 
+Precondition: 
+Open http://itcareer.pythonanywhere.com/
+Environment:
+Google Chrome, Версия 89.0.4389.114 (Официальная сборка), (64 бит)
+Steps:
+1. Enter valid Name, Surname, Password
+2. Enter Email trailing do in address (e.g. email.@domain.com)
+3. Click 'Submit' button
+ER:
+Message "Error: All Fields are Required"
+AR: 
+Error: Message "Success! Hello: <Name> <Surname>"
+
+Bug_29
+Title: 
+Email, multiple dots 
+Precondition: 
+Open http://itcareer.pythonanywhere.com/
+Environment:
+Google Chrome, Версия 89.0.4389.114 (Официальная сборка), (64 бит)
+Steps:
+1. Enter valid Name, Surname, Password
+2. Enter Email multiple dots (e.g. email..email@domain.com)
+3. Click 'Submit' button
+ER:
+Message "Error: All Fields are Required"
+AR: 
+Error: Message "Success! Hello: <Name> <Surname>"
+
+Bug_30
+Title: 
+Email, unicode charts in address 
+Precondition: 
+Open http://itcareer.pythonanywhere.com/
+Environment:
+Google Chrome, Версия 89.0.4389.114 (Официальная сборка), (64 бит)
+Steps:
+1. Enter valid Name, Surname, Password
+2. Enter Email unicode charts in address (e.g. あいうえお@domain.com)
+3. Click 'Submit' button
+ER:
+Message "Error: All Fields are Required"
+AR: 
+Error: Message "Success! Hello: <Name> <Surname>"
+
+Bug_31
+Title: 
+Email, leading dash in domain 
+Precondition: 
+Open http://itcareer.pythonanywhere.com/
+Environment:
+Google Chrome, Версия 89.0.4389.114 (Официальная сборка), (64 бит)
+Steps:
+1. Enter valid Name, Surname, Password
+2. Enter Email leading dash in domain (e.g. email@-domain.com)
+3. Click 'Submit' button
+ER:
+Message "Error: All Fields are Required"
+AR: 
+Error: Message "Success! Hello: <Name> <Surname>"
+
+Bug_32
+Title: 
+Email, leading dot in domain
+Precondition: 
+Open http://itcareer.pythonanywhere.com/
+Environment:
+Google Chrome, Версия 89.0.4389.114 (Официальная сборка), (64 бит)
+Steps:
+1. Enter valid Name, Surname, Password
+2. Enter Email leading dot in domain (e.g. email@.domain.com)
+3. Click 'Submit' button
+ER:
+Message "Error: All Fields are Required"
+AR: 
+Error: Message "Success! Hello: <Name> <Surname>"
+
+Bug_33
+Title: 
+Email, incorrect IP 
+Precondition: 
+Open http://itcareer.pythonanywhere.com/
+Environment:
+Google Chrome, Версия 89.0.4389.114 (Официальная сборка), (64 бит)
+Steps:
+1. Enter valid Name, Surname, Password
+2. Enter Email incorrect IP (e.g. email@111.222.333.44444)
+3. Click 'Submit' button
+ER:
+Message "Error: All Fields are Required"
+AR: 
+Error: Message "Success! Hello: <Name> <Surname>"
+
+Bug_34
+Title: 
+Email, multiple dots in domain
+Precondition: 
+Open http://itcareer.pythonanywhere.com/
+Environment:
+Google Chrome, Версия 89.0.4389.114 (Официальная сборка), (64 бит)
+Steps:
+1. Enter valid Name, Surname, Password
+2. Enter Email multiple dots in domain (e.g. email@domain..com)
+3. Click 'Submit' button
+ER:
+Message "Error: All Fields are Required"
+AR: 
+Error: Message "Success! Hello: <Name> <Surname>"
+
+Bug_35
+Title: 
+Email, length local part max +1 symbol
+Precondition: 
+Open http://itcareer.pythonanywhere.com/
+Environment:
+Google Chrome, Версия 89.0.4389.114 (Официальная сборка), (64 бит)
+Steps:
+1. Enter valid Name, Surname, Password
+2. Enter Email length local part 65 symbol (e.g. qwertyuioplkjhgfdsxcvbnmwrpjgaoigharihgprehgioherettuyhtdlgfdkgfi@domain.com)
+3. Click 'Submit' button
+ER:
+Message "Error: All Fields are Required"
+AR: 
+Error: Message "Success! Hello: <Name> <Surname>"
+
+Bug_36
+Title: 
+Email, length domain part +1 symbol
+Precondition: 
+Open http://itcareer.pythonanywhere.com/
+Environment:
+Google Chrome, Версия 89.0.4389.114 (Официальная сборка), (64 бит)
+Steps:
+1. Enter valid Name, Surname, Password
+2. Enter Email length domain part 256 symbol (e.g. bush@qwqtweyruityopiiiiiiiiiiiuuuuuuuuuuuuuuuuuuuuuuuuuyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyiiiiiiiiiiiiiiiiiiiiiiiisssssssssssssddddddddddddddddffffffffffffffffffhhhhhhhhhhhhhhhhhhggggggggggggggggggggjjjjjjjjjjjjjjjjjjjjjjjjjjjbbbbbbbbbbbbbbbbbbbbrrrrrrrrrrrrrrr.com)
+3. Click 'Submit' button
+ER:
+Message "Error: All Fields are Required"
+AR: 
+Error: Message "Success! Hello: <Name> <Surname>"
+
+
