@@ -1,0 +1,117 @@
+Bug_1
+Title: 
+Name, min length latin lowercase
+Precondition: 
+Open http://itcareer.pythonanywhere.com/
+Environment:
+Google Chrome, Версия 89.0.4389.114 (Официальная сборка), (64 бит)
+Steps:
+1. Enter valid Surname, Email, Password
+2. Enter Name 3 length latin lowercase (e.g. yan)
+3. Click 'Submit' button
+ER:
+Message Success! Hello: <Name> <Surname> 
+AR: 
+Error: Error: All Fields are Required
+
+
+Bug_2
+Title: 
+Name, max length-1 latin lowercase
+Precondition: 
+Open http://itcareer.pythonanywhere.com/
+Environment:
+Google Chrome, Версия 89.0.4389.114 (Официальная сборка), (64 бит)
+Steps:
+1. Enter valid Surname, Email, Password
+2. Enter Name 254 length latin lowercase (e.g. wqtweyruityopiiiiiiiiiiiuuuuuuuuuuuuuuuuuuuuuuuuuyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyiiiiiiiiiiiiiiiiiiiiiiiisssssssssssssddddddddddddddddffffffffffffffffffhhhhhhhhhhhhhhhhhhggggggggggggggggggggjjjjjjjjjjjjjjjjjjjjjjjjjjjbbbbbbbbbbbbbbbbbbbbrrrrrrrrrrrrrrr)
+3. Click 'Submit' button
+ER:
+Message Success! Hello: <Name> <Surname> 
+AR: 
+Error: Error: All Fields are Required
+
+
+Bug_3
+Title: 
+Name, max length latin lowercase
+Precondition: 
+Open http://itcareer.pythonanywhere.com/
+Environment:
+Google Chrome, Версия 89.0.4389.114 (Официальная сборка), (64 бит)
+Steps:
+1. Enter valid Surname, Email, Password
+2. Enter Name 255 length latin lowercase (e.g. wwqtweyruityopiiiiiiiiiiiuuuuuuuuuuuuuuuuuuuuuuuuuyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyiiiiiiiiiiiiiiiiiiiiiiiisssssssssssssddddddddddddddddffffffffffffffffffhhhhhhhhhhhhhhhhhhggggggggggggggggggggjjjjjjjjjjjjjjjjjjjjjjjjjjjbbbbbbbbbbbbbbbbbbbbrrrrrrrrrrrrrrr)
+3. Click 'Submit' button
+ER:
+Message Success! Hello: <Name> <Surname> 
+AR: 
+Error: Error: All Fields are Required
+
+
+Bug_4
+Title: 
+Name, one space
+Precondition: 
+Open http://itcareer.pythonanywhere.com/
+Environment:
+Google Chrome, Версия 89.0.4389.114 (Официальная сборка), (64 бит)
+Steps:
+1. Enter valid Surname, Email, Password
+2. Enter one space (e.g. " ")
+3. Click 'Submit' button
+ER:
+Message Success! Hello: <Name> <Surname> 
+AR: 
+Error: Error: All Fields are Required
+
+
+Bug_5
+Title: 
+Name, two space
+Precondition: 
+Open http://itcareer.pythonanywhere.com/
+Environment:
+Google Chrome, Версия 89.0.4389.114 (Официальная сборка), (64 бит)
+Steps:
+1. Enter valid Surname, Email, Password
+2. Enter two space (e.g. "  ")
+3. Click 'Submit' button
+ER:
+Message Success! Hello: <Name> <Surname> 
+AR: 
+Error: Error: All Fields are Required
+
+
+Bug_6
+Title: 
+Name, numbers
+Precondition: 
+Open http://itcareer.pythonanywhere.com/
+Environment:
+Google Chrome, Версия 89.0.4389.114 (Официальная сборка), (64 бит)
+Steps:
+1. Enter valid Surname, Email, Password
+2. Enter numbers (e.g. 123456789)
+3. Click 'Submit' button
+ER:
+Message Success! Hello: <Name> <Surname> 
+AR: 
+Error: Error: All Fields are Required
+
+
+Bug_7
+Title: 
+Name, symbols
+Precondition: 
+Open http://itcareer.pythonanywhere.com/
+Environment:
+Google Chrome, Версия 89.0.4389.114 (Официальная сборка), (64 бит)
+Steps:
+1. Enter valid Surname, Email, Password
+2. Enter symbols (e.g. !#$%&'*+-/=?^_`{|}~)
+3. Click 'Submit' button
+ER:
+Message Success! Hello: <Name> <Surname> 
+AR: 
+Error: Error: All Fields are Required
