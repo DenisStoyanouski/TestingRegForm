@@ -50,34 +50,34 @@ http://itcareer.pythonanywhere.com/
 	- JS script (XSS) injection (e.g.  '-prompt()-') 
 	- HTML parsing (e.g. <blink>Hello there</blink>)
 > Email max(64{[a-z][A-Z][0-9][!#$%&'*+-/=?^_`{|}~][.]}@{2-63[a-z][A-Z][0-9][/]
-	+ valid email lowercase (e.g. graspy@gmail.ru)
+	+ valid email lowercase (e.g. graspy@gmail.ru) 
 	+ valid email uppercase (e.g. GRASPY@GMAIL.RU)
 	> local-part 
 		+ with number  (e.g. 123bip@gmail.ru)
 		+ with hyphen (e.g. 123-bip@gmail.ru)
 		+ with underscore (e.g. 123_bip@gmail.ru)
 		+ with dot (e.g. 123.bip@gmail.ru)
-		+ unnecesarry cuotes (e.g. "email"@domain.com)
-		+ necesarry cuotes (e.g. "email..email"@domain.com)
+		+ unnecesarry cuotes (e.g. "email"@domain.com)  - 
+		+ necesarry cuotes (e.g. "email..email"@domain.com)  -
 	> domain part
 		+ with number (e.g. bip@12345.com)
 		+ with hyphen (e.g. 123bip@g-mail.ru)
 		+ with underscore (e.g. 123bip@gma_il.ru)
 		+ with two dot (e.g. 123bip@g.mail.ru)
-		+ square brackets around ip address (e.g. email@[123.123.123.123])
+		+ square brackets around ip address (e.g. email@[123.123.123.123]) - 
 		+ non-ACSII (e.g. nathan@学生优惠.com)
 	- no @ in address (e.g.	plainaddress)
 	- no address (e.g. @domain.com)
 	- garbage (e.g. #@%^%#$@#$@#.com)
-	- leading dot in address (e.g. .email@domain.com)
-	- trailing do in address (e.g. email.@domain.com)
-	- multiple dots (e.g. email..email@domain.com)
+	- leading dot in address (e.g. .email@domain.com) -
+	- trailing do in address (e.g. email.@domain.com) -
+	- multiple dots (e.g. email..email@domain.com) -
 	- unicode charts in address (e.g. あいうえお@domain.com)
 	- leading dash in domain ( e.g. email@-domain.com)
 	- leading dot in domain (e.g. email@.domain.com)
-	- incorrect IP ( e.g. email@111.222.333.44444)
+	- incorrect IP ( e.g. email@111.222.333.44444) -
 	- multiple dots in domain (e.g. email@domain..com)
-	- length local part +1 symbol (e.g. qwertyuioplkjhgfdsxcvbnmwrpjgaoigharihgprehgioherettuyhtdlgfdkgfi@domain.com)
+	- length local part +1 symbol (e.g. qwertyuioplkjhgfdsxcvbnmwrpjgaoigharihgprehgioherettuyhtdlgfdkgfi@domain.com) - -
 	- length domain part +1 symbol (e.g. bush@qwqtweyruityopiiiiiiiiiiiuuuuuuuuuuuuuuuuuuuuuuuuuyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyiiiiiiiiiiiiiiiiiiiiiiiisssssssssssssddddddddddddddddffffffffffffffffffhhhhhhhhhhhhhhhhhhggggggggggggggggggggjjjjjjjjjjjjjjjjjjjjjjjjjjjbbbbbbbbbbbbbbbbbbbbrrrrrrrrrrrrrrr.com
 > Password (5-25, 1 number, 1 uppercase)
 	+ min length (e.g. wer5Q)
